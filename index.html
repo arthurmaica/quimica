@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Química</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .content {
+            padding: 50px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Define os backgrounds para cada seção .content */
+        .content:nth-of-type(1) {
+            background-image: url('background1.jpg');
+            background-size: cover;
+        }
+
+        .content:nth-of-type(2) {
+            background-image: url('background2.jpg');
+            background-size: cover;
+        }
+
+        /* Adicione mais .content:nth-of-type() conforme necessário para mais backgrounds */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left">
+                <div class="logo-placeholder">Setrem</div>
+            </div>
+            <div class="right">
+                <div class="icon-placeholder" id="menu-icon">☰</div>
+                <button class="nav-button" onclick="location.href='https://signup.leagueoflegends.com/'">3D</button>
+            </div>
+        </div>
+    </header>
+    <nav id="side-menu" class="side-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="content1">
+            <h2>ATRAZINA</h2>
+            <p>C8H14ClN5</p>
+        </section>
+      <section class="content2">
+            <h2>Introdução</h2>
+        <p>.</p>
+            <p>A Atrazina é um herbicida amplamente utilizado na agricultura para controlar o crescimento de ervas daninhas. É uma molécula orgânica que pertence à classe dos triazinas. A sua estrutura química inclui uma cadeia carbônica principal com três anéis de triazina. 
+            </p>
+        </section>
+      <section class="content3">
+            <h2>Modo de Ação</h2>
+        <p>.</p>
+        <p>O ingrediente ativo ATRAZINA é absorvido pelas plantas através das raízes e se transloca via xilema até as folhas onde provoca a inibição da fotossíntese, cujos sintomas se manifestam através da clorose, necrose e morte das invasoras. O potencial herbicida da atrazina deve-se à sua ação na inibição da fotossíntese pela interrupção da reação de Hill. Sua biodisponibilidade em solos é governada essencialmente pelo equilíbrio dinâmico existente entre a solubilidade na fase aquo- sa e a capacidade adsortiva do composto no sistema coloidal do solo.
+            </p>
+        </section>
+        <section class="carousel">
+            <div class="carousel-inner">
+                <div class="slide active">
+                    <img src="imagem1.jpg" alt="Imagem 1">
+                </div>
+                <div class="slide">
+                    <img src="imagem2.jpg" alt="Imagem 2">
+                </div>
+                <div class="slide">
+                    <img src="imagem3.jpg" alt="Imagem 3">
+                </div>
+            </div>
+            <button class="prev" onclick="prevSlide()">Anterior</button>
+            <button class="next" onclick="nextSlide()">Próxima</button>
+        </section>
+        <!-- Adicione mais seções .content conforme necessário -->
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
